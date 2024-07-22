@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #C9E4CA, #F7D2C4, #87CEEB); /* Gentle gradient with three colors */
+    margin: 0;
+    animation: backgroundFade 3s ease-in-out infinite alternate; /* Background animation */
+  }
+  
+  @keyframes backgroundFade {
+    0% {
+      background: linear-gradient(to right, #C9E4CA, #F7D2C4, #87CEEB);
+    }
+    100% {
+      background: linear-gradient(to right, #E5D8B6, #F2C464, #6495ED); /* Alternative gentle gradient with three colors */
+    }
+  }
+  
+  section {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+  }
+  
+  #quiz-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #question {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    background-color: #8BC34A;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: buttonFadeIn 1s ease-in-out, buttonPulse 2s ease-in-out infinite;
+  }
+  
+  .btn:hover {
+    background-color: #64B5F6; 
+    transform: translateY(-3px);
+  }
+  
+  .btn:active {
+    background-color: #FFC107; 
+  }
+  
+  .btn:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  #result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #result-text {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
